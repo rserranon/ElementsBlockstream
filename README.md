@@ -69,7 +69,7 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 5. Create a new Pull Request
 
 <!-- Markdown link & img dfn's -->
-[vagrant-image]: https://img.shields.io/badge/Version-Aurelia-blueviolet.svg 
-[vagrant-url]: https://img.shields.io/badge/Version-Aurelia-blueviolet.svg  
+[vagrant-image]: https://img.shields.io/badge/Version-Aurelia-blueviolet.svg  
+[vagrant-url]:  https://www.vagrantup.com/
 [aurelia-image]: https://img.shields.io/badge/Version-Aurelia-blueviolet.svg
 [aurelia-url]: https://aurelia.io 
