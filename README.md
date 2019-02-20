@@ -1,7 +1,7 @@
 # Product Name
 > Blockstream Elements demo & use cases  
 
-![vagrant-image][vagrant-url]
+[![Vagrant Version][vagrant-image]][vagrant-url]
 [![Aurelia Version][aurelia-image]][aurelia-url]
 
 One to two paragraph statement about your product and what it does.
