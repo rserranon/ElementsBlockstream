@@ -1,5 +1,5 @@
-# Product Name
-> Blockstream Elements demo & use cases  
+# Blockstream Elements demo & other use cases 
+> environment setup, scripts, demo script and other use cases prototypes 
 
 [![Vagrant Version][vagrant-image]][vagrant-url]
 [![VirtualBox][virtualbox-image]][virtualbox-url]
@@ -12,8 +12,30 @@ Virtual machine using Vagrant to test Blockstream Elemens demo & aditional test 
 ## Installation
 
 Install Vagrant from  [![Vagrant Version][vagrant-image]][vagrant-url]
+
 Install VitualBox from [![VirtualBox][virtualbox-image]][virtualbox-url]
 
+
+Open aterminal on you Mac:
+````sh
+# Initializes the current directory to be a Vagrant environment by creating an initial Vagrantfile if one doesn't already exist 
+vagrant init
+
+# Creates and configures guest machines according to your Vagrantfile
+vagrant up
+```
+Clone this repository (this will replace your Vagrantfile with the one you will need)
+
+```
+# vagrant commands
+vagrant -h
+
+```
+
+```
+# connect via ssh to your virtual machine box
+vagrant ssh
+```
 
 ## Usage example
 
@@ -24,11 +46,6 @@ _For more examples and usage, please refer to the [Wiki][wiki]._
 ## Development setup
 
 Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-```sh
-make install
-npm test
-```
 
 ## Release History
 
@@ -44,7 +61,7 @@ Your Name – [@StartupsPal](https://twitter.com/dbader_org) – YourEmail@examp
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
-[https://github.com/rserranon//ElementsBlockstream](https://github.com/rserranon)
+[https://github.com/rserranon/ElementsBlockstream](https://github.com/rserranon)
 
 ## Contributing
 
@@ -59,5 +76,5 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 [vagrant-url]:  https://www.vagrantup.com/
 [virtualbox-image]: https://img.shields.io/badge/6.0-VirtualBox-blue.svg 
 [virtualbox-url]:  https://www.virtualbox.org/
-[aurelia-image]: https://img.shields.io/badge/Version-Aurelia-blueviolet.svg
+[aurelia-image]: https://img.shields.io/badge/1.3.1-Aurelia-blueviolet.svg
 [aurelia-url]: https://aurelia.io 
