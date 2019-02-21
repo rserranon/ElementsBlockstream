@@ -1,5 +1,5 @@
 # Blockstream Elements demo & other use cases 
-> environment setup, scripts, demo script and other use cases prototypes 
+> Environment setup, scripts, demo script and other use cases prototypes 
 
 [![Vagrant Version][vagrant-image]][vagrant-url]
 [![VirtualBox][virtualbox-image]][virtualbox-url]
@@ -61,7 +61,7 @@ Your Name – [@StartupsPal](https://twitter.com/dbader_org) – YourEmail@examp
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
-[https://github.com/rserranon/ElementsBlockstream](https://github.com/rserranon)
+[https://github.com/rserranon//ElementsBlockstream](https://github.com/rserranon)
 
 ## Contributing
 
