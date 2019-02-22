@@ -1,6 +1,7 @@
 # Blockstream Elements demo & other use cases 
 > Environment setup, scripts, demo script and other use cases prototypes 
 
+
 [![Vagrant Version][vagrant-image]][vagrant-url]
 [![VirtualBox][virtualbox-image]][virtualbox-url]
 [![Aurelia Version][aurelia-image]][aurelia-url]
@@ -17,7 +18,7 @@ Install VitualBox from [![VirtualBox][virtualbox-image]][virtualbox-url]
 
 
 Open aterminal on you Mac:
-````sh
+```sh
 # Initializes the current directory to be a Vagrant environment by creating an initial Vagrantfile if one doesn't already exist 
 vagrant init
 
@@ -26,13 +27,11 @@ vagrant up
 ```
 Clone this repository (this will replace your Vagrantfile with the one you will need)
 
-```
+```sh
 # vagrant commands
 vagrant -h
 
-```
 
-```
 # connect via ssh to your virtual machine box
 vagrant ssh
 ```
