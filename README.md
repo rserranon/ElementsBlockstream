@@ -5,6 +5,8 @@
 [![Vagrant Version][vagrant-image]][vagrant-url]
 [![VirtualBox][virtualbox-image]][virtualbox-url]
 [![Aurelia Version][aurelia-image]][aurelia-url]
+[![Flask Version][flask-image]][flask-url]
+
 
 Virtual machine using Vagrant to test Blockstream Elemens demo & aditional test use cases, front end using Auerlia Framework
 
@@ -76,4 +78,7 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 [virtualbox-image]: https://img.shields.io/badge/6.0-VirtualBox-blue.svg 
 [virtualbox-url]:  https://www.virtualbox.org/
 [aurelia-image]: https://img.shields.io/badge/1.3.1-Aurelia-blueviolet.svg
-[aurelia-url]: https://aurelia.io 
+[aurelia-url]: https://aurelia.io
+[flask-image]: https://img.shields.io/badge/1.0.2-Flask-green.svg 
+[flask-url]: https://www.fullstackpython.com/flask.html
+ 
