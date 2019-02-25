@@ -1,3 +1,6 @@
 # Vagrant folder
 .vagrant
+elements_projects/flaskProject/flasktest
+elements_projects/flaskProject/tutorial-env
+elements_projects/flaskProject/venv
 *.swp
