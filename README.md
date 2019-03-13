@@ -1,4 +1,4 @@
-# Blockstream Elements demo & other use cases 
+<!-- # Blockstream Elements demo & other use cases  -->
 > Environment setup, scripts, demo script and other use cases prototypes 
 
 
@@ -39,6 +39,16 @@ vagrant ssh
 ```
 
 ## Usage example
+
+In the SSH session of your Vagrant virtual machine run:
+
+```
+source ./create_aliases.sh
+
+source ./strart_services.sh
+
+source ./stop_services.sh
+```
 
 A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
 
