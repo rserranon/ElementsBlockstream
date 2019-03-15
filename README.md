@@ -46,8 +46,24 @@ In the SSH session of your Vagrant virtual machine run:
 source ./create_aliases.sh
 
 source ./strart_services.sh
+```
+
+
+When you wnat to stop the resvices do:
+```
 
 source ./stop_services.sh
+```
+
+To use flask
+
+```
+vagrant@vagrant-ubuntu-trusty-64:~$ python3 -m venv flasktest
+vagrant@vagrant-ubuntu-trusty-64:~$  . flasktest/bin/activate
+(flasktest) vagrant@vagrant-ubuntu-trusty-64:~$ which pip
+vagrant@vagrant-ubuntu-trusty-64:~$ /home/vagrant/flasktest/bin/pip
+(flasktest) vagrant@vagrant-ubuntu-trusty-64:~$  pip install Flask
+(flasktest) vagrant@vagrant-ubuntu-trusty-64:~$  pip install python-bitcoinrpc
 ```
 
 A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
