@@ -1,3 +1,5 @@
+# Blockstream Elements Demo
+
 <!-- # Blockstream Elements demo & other use cases  -->
 > Environment setup, scripts, demo script and other use cases prototypes 
 
@@ -19,7 +21,7 @@ Install Vagrant from  [![Vagrant Version][vagrant-image]][vagrant-url]
 Install VitualBox from [![VirtualBox][virtualbox-image]][virtualbox-url]
 
 
-Open aterminal on you Mac:
+Open a terminal on you Mac:
 ```sh
 # Initializes the current directory to be a Vagrant environment by creating an initial Vagrantfile if one doesn't already exist 
 vagrant init
@@ -38,33 +40,60 @@ vagrant -h
 vagrant ssh
 ```
 
-## Usage example
+## Demo setup on bash 
 
 In the SSH session of your Vagrant virtual machine run:
 
 ```
 source ./create_aliases.sh
 
-source ./strart_services.sh
+source ./start_services.sh
 ```
 
 
-When you wnat to stop the resvices do:
+When you wnat to stop the services do:
 ```
 
 source ./stop_services.sh
 ```
 
-To use flask
+## Flask installation
+
+To use flask make sure you are on your ssh session of your Vagrant virtual machine
+
+```
+vagrant ssh
+```
+
+create virtual environment and install flask and python-bitcoinrpc
 
 ```
 vagrant@vagrant-ubuntu-trusty-64:~$ python3 -m venv flasktest
-vagrant@vagrant-ubuntu-trusty-64:~$  . flasktest/bin/activate
+
 (flasktest) vagrant@vagrant-ubuntu-trusty-64:~$ which pip
 vagrant@vagrant-ubuntu-trusty-64:~$ /home/vagrant/flasktest/bin/pip
+
 (flasktest) vagrant@vagrant-ubuntu-trusty-64:~$  pip install Flask
 (flasktest) vagrant@vagrant-ubuntu-trusty-64:~$  pip install python-bitcoinrpc
 ```
+
+activate virtual environment
+```
+vagrant@vagrant-ubuntu-trusty-64:~$ source flasktest/bin/activate
+
+(flasktest) vagrant@vagrant-ubuntu-trusty-64:~$ which pip
+vagrant@vagrant-ubuntu-trusty-64:~$ /home/vagrant/flasktest/bin/pip
+
+(flasktest) vagrant@vagrant-ubuntu-trusty-64:~$  pip install Flask
+(flasktest) vagrant@vagrant-ubuntu-trusty-64:~$  pip install python-bitcoinrpc
+```
+
+
+
+How to kill flask process running on backgroud
+
+use `<ctrl> z` or `lsof -i tcp:5000`
+`kill -9 <PID>` #where <PID> is the process id returned by lsof
 
 A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
 
