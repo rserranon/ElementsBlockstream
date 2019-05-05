@@ -21,5 +21,6 @@ export function configure(aurelia) {
   //Anyone wanting to use HTMLImports to load views, will need to install the following plugin.
   //aurelia.use.plugin('aurelia-html-import-template-loader')
 
-  aurelia.start().then(() => aurelia.setRoot());
+  // Here we can change the setRoot to start with the js we want (i.e. setRoot(folder/myStartJs)
+    aurelia.start().then(() => aurelia.setRoot('shell/shell'));
 }

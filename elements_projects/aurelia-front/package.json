@@ -9,16 +9,16 @@
   "scripts": {},
   "license": "MIT",
   "dependencies": {
-    "aurelia-bootstrapper": "^2.3.0",
     "aurelia-animator-css": "^1.0.0",
-    "bluebird": "^3.5.2",
-    "whatwg-fetch": "^2.0.3",
+    "aurelia-bootstrapper": "^2.3.0",
     "aurelia-fetch-client": "^1.0.0",
+    "bluebird": "^3.5.2",
+    "bootstrap": "^3.4.1",
+    "font-awesome": "^4.6.3",
     "jquery": "^2.2.4",
-    "bootstrap": "^3.3.6",
-    "font-awesome": "4.6.3",
     "requirejs": "^2.3.6",
-    "text": "github:requirejs/text#latest"
+    "text": "github:requirejs/text#latest",
+    "whatwg-fetch": "^2.0.3"
   },
   "peerDependencies": {},
   "devDependencies": {
