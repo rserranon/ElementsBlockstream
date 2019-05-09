@@ -8,10 +8,10 @@ export default [
     settings: { iconClass: 'fa-home' }
   },
   {
-    route: 'tickets',
-    moduleId: 'tickets/tickets',
+    route: 'bitcoin',
+    moduleId: 'bitcoin/bitcoin',
     nav: true,
-    settings: { iconClass: 'fa-ticket' }
+    settings: { iconClass: 'fa-btc' }
   },
   {
     name: 'thread',
@@ -19,13 +19,13 @@ export default [
     moduleId: 'tickets/thread'
   },
   {
-    name: 'user',
+    name: 'assets',
     route: ['users', 'users/:id'],
     moduleId: 'users/users',
     href: '#users',
     nav: true,
     title: 'Users',
-    settings: { iconClass: 'fa-group' }
+    settings: { iconClass: 'fa-university' }
   },
   {
     name: 'settings',

@@ -1,24 +1,26 @@
-# Blockstream Elements Demo
+
+# Blockstream Elements Demo Test  
 
 <!-- # Blockstream Elements demo & other use cases  -->
-> Environment setup, scripts, demo script and other use cases prototypes 
+> Environment setup, workflow, scripts and other use cases prototypes (bitcon & elements deamons, web backend and front end)
 
 
-[![Vagrant Version][vagrant-image]][vagrant-url]
-[![VirtualBox][virtualbox-image]][virtualbox-url]
-[![Aurelia Version][aurelia-image]][aurelia-url]
+[![Vagrant Version][vagrant-image]][vagrant-url] [![VirtualBox][virtualbox-image]][virtualbox-url]
 [![Flask Version][flask-image]][flask-url]
+[![Aurelia Version][aurelia-image]][aurelia-url]
 
 
-Virtual machine using Vagrant to test Blockstream Elemens demo & aditional test use cases, front end using Auerlia Framework
+Virtual machine using Vagrant to test Blockstream Elemens demo & aditional test use cases, services layer on Flask (python web framework), front end using Auerlia (Js Framework)
 
 ![](header.png)
 
 ## Installation
 
-Install Vagrant from  [![Vagrant Version][vagrant-image]][vagrant-url]
+### Vagrant Installation
 
-Install VitualBox from [![VirtualBox][virtualbox-image]][virtualbox-url]
+Install Vagrant from  [Vagrant Website][vagrant-url]
+
+Install VitualBox from [VirtualBox Website][virtualbox-url]
 
 
 Open a terminal on you Mac:
@@ -29,10 +31,10 @@ vagrant init
 # Creates and configures guest machines according to your Vagrantfile
 vagrant up
 ```
-Clone this repository (this will replace your Vagrantfile with the one you will need)
+Clone this github repository (this will replace your Vagrantfile with the one you will need)
 
 ```sh
-# vagrant commands
+# Help on vagrant commands
 vagrant -h
 
 
@@ -41,6 +43,8 @@ vagrant ssh
 ```
 
 ## Demo setup on bash 
+
+We need to create some aliases for bitcoin and elements deamons
 
 In the SSH session of your Vagrant virtual machine run:
 
@@ -51,9 +55,8 @@ source ./start_services.sh
 ```
 
 
-When you wnat to stop the services do:
+When you want to stop the services do:
 ```
-
 source ./stop_services.sh
 ```
 
@@ -137,3 +140,4 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 [flask-image]: https://img.shields.io/badge/1.0.2-Flask-green.svg 
 [flask-url]: https://www.fullstackpython.com/flask.html
  
+
