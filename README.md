@@ -1,8 +1,8 @@
 
-# Blockstream Elements Demo Test  
+# Blockstream Elements Demo 
 
 <!-- # Blockstream Elements demo & other use cases  -->
-> Environment setup, workflow, scripts and other use cases prototypes (bitcon & elements deamons, web backend and front end)
+> Environment setup, worflow, scripts and other use cases prototypes (bitcon & elements deamons, web backend and front end)
 
 
 [![Vagrant Version][vagrant-image]][vagrant-url] [![VirtualBox][virtualbox-image]][virtualbox-url]
@@ -10,9 +10,11 @@
 [![Aurelia Version][aurelia-image]][aurelia-url]
 
 
-Virtual machine using Vagrant to test Blockstream Elemens demo & aditional test use cases, services layer on Flask (python web framework), front end using Auerlia (Js Framework)
+Virtual machine using Vagrant to test Blockstream Elemens demo & aditional test use cases, python-bitcoinrpc, services layer on Flask (python web framework), front end using Auerlia (Js Framework)
 
-![](header.png)
+## Architecture 
+
+![Architecture](Arquitecture/190508-Arquitecture-v0.2.png)
 
 ## Installation
 
