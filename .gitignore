@@ -9,7 +9,7 @@ elements_projects/flaskProject/venv
 #Aurelia
 elements_projects/aurelia-front/scripts
 elements_projects/aurelia-front/font-awesome
-elements_projects/aurelia-front/bootstrap
+elements_projects/aurelia-front/bootstrap/fonts
 elements_projects/aurelia-front/node_modules
 
 # Vim Swap files
