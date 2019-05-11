@@ -1,6 +1,15 @@
 # Vagrant folder
 .vagrant
+
+# Flask
 elements_projects/flaskProject/flasktest
 elements_projects/flaskProject/tutorial-env
 elements_projects/flaskProject/venv
+
+#Aurelia
+elements_projects/aurelia-front/font-awesome
+elements_projects/aurelia-front/bootstrap
+elements_projects/aurelia-front/node_modules
+
+# Vim Swap files
 *.swp
