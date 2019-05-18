@@ -54,7 +54,8 @@ class BitcoinWalletRPC:
 
     def walletInfo(self, targetwallet=""):
         self.logger.debug(f"get wallet {targetwallet} information")
-        return self.bitcoindConnection.getwalletinfo(targetwallet)
+        # it doesn't work incliding the parameter self.bitcoindConnection.getwalletinfo(targetwallet) so I use self.bitcoindConnection.getwalletinfo()
+        return self.bitcoindConnection.getwalletinfo()
 
     def createwallet(self, walletname):
         self.logger.debug(f"create wallet with name: {walletname}")
@@ -66,13 +67,13 @@ class BitcoinWalletRPC:
         return transactions
 
 RPCUSER = "admin1"
-RPCPASS = "123"
+RPCPASS = "1234"
 RPCPORT = 18443
 myWalletConnection = BitcoinWalletRPC("http://%s:%s@127.0.0.1:%s"%(RPCUSER, RPCPASS, RPCPORT))
 
 myWalletConnection.list_addresses()
 #myWalletConnection.createwallet("testwallet")
 # TODO RPC method getwalletinfo is not working
-#myWalletConnection.walletInfo("")
+myWalletConnection.walletInfo("")
 myWalletConnection.listtransactions()
 

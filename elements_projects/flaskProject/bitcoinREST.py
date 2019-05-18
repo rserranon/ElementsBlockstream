@@ -6,7 +6,7 @@ from flask_cors import CORS
 
 rpc_port = 18443
 rpc_user = 'admin1'
-rpc_password = '123'
+rpc_password = '1234'
 
 
 app = Flask(__name__)
@@ -35,7 +35,8 @@ def home():
 
 @app.route("/getwalletinfo")
 def getwalletinfo():
-    return jsonify(CallRPC([["getwalletinfo", "[]"]]))
+    # it doesn't work with params '[]', '[""]', None, '["walletname": None]' so I used CallRPC([["getwalletinfo" ]])
+    return jsonify(CallRPC([["getwalletinfo" ]]))
 
 @app.route("/listunspent")
 def listunspent():
