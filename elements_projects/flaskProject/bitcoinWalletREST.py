@@ -72,6 +72,7 @@ myWalletConnection = BitcoinWalletRPC("http://%s:%s@127.0.0.1:%s"%(RPCUSER, RPCP
 
 myWalletConnection.list_addresses()
 #myWalletConnection.createwallet("testwallet")
+# TODO RPC method getwalletinfo is not working
 #myWalletConnection.walletInfo("")
 myWalletConnection.listtransactions()
 

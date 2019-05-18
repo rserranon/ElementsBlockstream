@@ -1,4 +1,5 @@
 # pip install -r requirements.txt
 flask
 python-bitcoinrpc
-
+flask-cors
+simplejson

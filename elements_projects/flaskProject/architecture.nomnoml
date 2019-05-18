@@ -1,0 +1,27 @@
+[<Frame>Bitcoin REST Wallet|
+  [Global |
+  check_JSON_precision
+  ]
+  [BitcoinD |
+  <instance>bitcoind
+  |
+  __init__
+  connect_JSON()
+  unlock_wallet()
+  list_addresses()
+  list_unspent()
+  select_coins()
+  create_tx()
+  compute_amount_in()
+  compute_amount_out()
+  sanity_test_fee()
+  refill_keypool()
+  generate_new_address()
+  spend_from()
+  get_txid_inputs()
+  refund_from_withconfs()
+  get_address_info()
+  sign_message()
+  verify_signature()
+  ]
+]
