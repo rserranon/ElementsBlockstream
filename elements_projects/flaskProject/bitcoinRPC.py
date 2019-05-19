@@ -22,6 +22,7 @@ class RPCbitcoin:
         #call to verify JSON precision
         check_json_precision()
 
+        # global settings for RPCbitcoin conections
         self.logger = logging.getLogger(__name__)
         self.BASE_FEE = fee
         self.MINCONFS = minconfs
@@ -44,6 +45,10 @@ class RPCbitcoin:
             return result
         except:
             raise
+
+    def getnewaddress(self, label = "", addressType = "legacy" ):
+        self.logger.debug(f"Generate new address {label} of type {addressType} ")
+        return self.bitcoindConnection.getnewaddress(label, addressType)
 
     def listrecievedbyaddress(self, searchAddress=None):
         self.logger.debug(f"list addresses called with search account = {searchAddress}")
@@ -82,5 +87,6 @@ myWalletConnection = RPCbitcoin("http://%s:%s@127.0.0.1:%s"%(RPCUSER, RPCPASS, R
 
 #myWalletConnection.createwallet("testwallet")
 myWalletConnection.getwalletinfo()
+myWalletConnection.getnewaddress(label = "My New Address")
 myWalletConnection.listtransactions()
 myWalletConnection.listrecievedbyaddress()
