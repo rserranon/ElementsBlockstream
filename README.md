@@ -2,7 +2,7 @@
 # Blockstream Elements Demo 
 
 <!-- # Blockstream Elements demo & other use cases  -->
-> Environment setup, worflow, scripts and other use cases prototypes (bitcon & elements deamons, web backend and front end)
+> Environment setup, workflow, scripts and other use cases prototypes (bitcoin & elements daemons, web backend and front end)
 
 
 [![Vagrant Version][vagrant-image]][vagrant-url] [![VirtualBox][virtualbox-image]][virtualbox-url]
@@ -10,11 +10,11 @@
 [![Aurelia Version][aurelia-image]][aurelia-url]
 
 
-Virtual machine using Vagrant to test Blockstream Elemens demo & aditional test use cases, python-bitcoinrpc, services layer on Flask (python web framework), front end using Auerlia (Js Framework)
+Virtual machine using Vagrant to test Blockstream Elements demo & additional test cases, python-bitcoinrpc, services layer on Flask (python web framework), front end using Aurelia (JS Framework)
 
 ## Architecture 
 
-![Architecture](Arquitecture/190508-Arquitecture-v0.2.png)
+![Architecture](Architecture/190508-Arquitecture-v0.2.png)
 
 ## Installation
 
@@ -26,6 +26,7 @@ Install VitualBox from [VirtualBox Website][virtualbox-url]
 
 
 Open a terminal on you Mac:
+
 ```sh
 # Initializes the current directory to be a Vagrant environment by creating an initial Vagrantfile if one doesn't already exist 
 vagrant init
@@ -38,7 +39,6 @@ Clone this github repository (this will replace your Vagrantfile with the one yo
 ```sh
 # Help on vagrant commands
 vagrant -h
-
 
 # connect via ssh to your virtual machine box
 vagrant ssh
@@ -75,21 +75,13 @@ create virtual environment and install flask and python-bitcoinrpc
 ```
 vagrant@vagrant-ubuntu-trusty-64:~$ python3 -m venv flasktest
 
-(flasktest) vagrant@vagrant-ubuntu-trusty-64:~$ which pip
-vagrant@vagrant-ubuntu-trusty-64:~$ /home/vagrant/flasktest/bin/pip
-
-(flasktest) vagrant@vagrant-ubuntu-trusty-64:~$  pip install Flask
-(flasktest) vagrant@vagrant-ubuntu-trusty-64:~$  pip install python-bitcoinrpc
-```
-
-activate virtual environment
-```
 vagrant@vagrant-ubuntu-trusty-64:~$ source flasktest/bin/activate
 
 (flasktest) vagrant@vagrant-ubuntu-trusty-64:~$ which pip
 vagrant@vagrant-ubuntu-trusty-64:~$ /home/vagrant/flasktest/bin/pip
 
 (flasktest) vagrant@vagrant-ubuntu-trusty-64:~$  pip install Flask
+
 (flasktest) vagrant@vagrant-ubuntu-trusty-64:~$  pip install python-bitcoinrpc
 ```
 
@@ -97,8 +89,12 @@ vagrant@vagrant-ubuntu-trusty-64:~$ /home/vagrant/flasktest/bin/pip
 
 How to kill flask process running on backgroud
 
-use `<ctrl> z` or `lsof -i tcp:5000`
-`kill -9 <PID>` #where <PID> is the process id returned by lsof
+use <kbd>ctrl z</kbd> or 
+
+```
+$ lsof -i tcp:5000
+$ kill -9 <PID>  # where <PID> is the process id returned by lsof
+```
 
 A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
 
