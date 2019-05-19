@@ -1,8 +1,16 @@
+from bitcoinRPC import *
 from flask import Flask
 from decimal import *
 from flask import json, jsonify
 from bitcoinrpc.authproxy import AuthServiceProxy, JSONRPCException
 from flask_cors import CORS
+
+RPCUSER = "admin1"
+RPCPASS = "1234"
+RPCPORT = 18443
+myWalletConnection = RPCbitcoin("http://%s:%s@127.0.0.1:%s"%(RPCUSER, RPCPASS, RPCPORT))
+
+
 
 rpc_port = 18443
 rpc_user = 'admin1'
@@ -44,7 +52,7 @@ def listunspent():
 
 @app.route("/listtransactions")
 def llisttransactions():
-    return jsonify(CallRPC([["listtransactions", None]]))
+    return jsonify(myWalletConnection.listtransactions())
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=6002)

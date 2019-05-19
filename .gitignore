@@ -15,3 +15,4 @@ elements_projects/aurelia-front/node_modules
 # Vim Swap files
 *.swp
 README.html
+elements_projects/flaskProject/__pycache__
